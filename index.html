@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./assets/css/reset.css">
+   <link rel="stylesheet" href="./assets/css/style.css">
+   <title>Cafe Template</title>
+   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- Links -->
+   <div class="nav">
+      <ul class="nav-list p8-16">
+         <li class="nav-item">
+            <a href="#!" class="nav-item__link p8-16">HOME</a>
+         </li>
+         <li class="nav-item">
+            <a href="#!" class="nav-item__link p8-16">ABOUT</a>
+         </li>
+         <li class="nav-item">
+            <a href="#!" class="nav-item__link p8-16">MENU</a>
+         </li>
+         <li class="nav-item">
+            <a href="#!" class="nav-item__link p8-16">WHERE</a>
+         </li>
+      </ul>
+   </div>
+
+   <!-- Header with Image -->
+   <header class="header">
+      <div class="header__left">
+         <span class="tag">Open from 6am to 5pm</span>
+      </div>
+      <div class="header__center">
+         <span>the <br> Cafe</span>
+      </div>
+      <div class="header__right">
+         <span>15 Adr street, 5015</span>
+      </div>
+   </header>
+
+   <!-- Content Container -->
+   <div class="container">
+      <!-- About -->
+      <div class="about section">
+         <h5 class="heading">
+            <span class="tag">ABOUT THE CAFE</span>
+         </h5>
+         <p class="text">The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+         <p class="text">In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
+         <div class="panel">
+            <p class="text"><q>"Use products from nature for what it's worth - but never too early, nor too late."</q> Fresh is the new sweet.</p>
+            <p class="text">Chef, Coffeeist and Owner: Liam Brown</p>
+         </div>
+         <figure>
+            <img src="./assets/images/coffeeshop.jpg" alt="Coffee Shop" class="about-img">
+         </figure>
+         <p class="text"><span class="bolder">Opening hours:</span> everyday from 6am to 5pm.</p>
+         <p class="text"><span class="bolder">Address:</span> 15 Adr street, 5015, NY</p>
+      </div>
+      <!-- MENU -->
+      <div class="menu section">
+         <h5 class="heading">
+            <span class="tag">THE MENU</span>
+         </h5>
+         <div class="menu-nav p8-16">
+            <div class="menu-item menu-active" onclick="myFunc(event, 'Eat')" id="myLink">Eat</div>
+            <div class="menu-item" onclick="myFunc(event, 'Drinks')">Drink</div>
+         </div>
+         <!-- Eat -->
+         <div class="food-list" id="Eat">
+            <div class="food-item">
+               <h5 class="food-item__name">Bread Basket</h5>
+               <p class="food-item__desc text">Assortment of fresh baked fruit breads and muffins 5.50</p>
+            </div>
+            <div class="food-item">
+               <h5 class="food-item__name">Honey Almond Granola with Fruits</h5>
+               <p class="food-item__desc text">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+            </div>
+            <div class="food-item">
+               <h5 class="food-item__name">Belgian Waffle</h5>
+               <p class="food-item__desc text">Vanilla flavored batter with malted flour 7.50</p>
+            </div>
+            <div class="food-item">
+               <h5 class="food-item__name">Scrambled eggs</h5>
+               <p class="food-item__desc text">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+            </div>
+            <div class="food-item">
+               <h5 class="food-item__name">Blueberry Pancakes</h5>
+               <p class="food-item__desc text">With syrup, butter and lots of berries 8.50</p>
+            </div>
+         </div>
+         <!-- Drink -->
+         <div class="food-list" id="Drinks">
+            <div class="food-item">
+               <h5 class="food-item__name">Coffee</h5>
+               <p class="food-item__desc text">Regular coffee 2.50</p>
+            </div>
+            <div class="food-item">
+               <h5 class="food-item__name">Chocolato</h5>
+               <p class="food-item__desc text">Chocolate espresso with milk 4.50</p>
+            </div>
+            <div class="food-item">
+               <h5 class="food-item__name">Corretto</h5>
+               <p class="food-item__desc text">Whiskey and coffee 5.00</p>
+            </div>
+            <div class="food-item">
+               <h5 class="food-item__name">Iced tea</h5>
+               <p class="food-item__desc text">Hot tea, except not hot 3.00</p>
+            </div>
+            <div class="food-item">
+               <h5 class="food-item__name">Soda</h5>
+               <p class="food-item__desc text">Coke, Sprite, Fanta, etc. 2.50</p>
+            </div>
+         </div>
+         <figure>
+            <img src="/assets/images/coffeehouse2.jpg" alt="Coffee House" class="menu-img">
+         </figure>
+      </div>
+      <!-- Contact -->
+      <div class="contact section">
+         <h5 class="heading">
+            <span class="tag">WHERE TO FIND US</span>
+         </h5>
+         <p class="text">Find us at some address at some place.</p>
+         <figure>
+            <img src="./assets/images/map.jpg" alt="Map" class="contact-img">
+         </figure>
+         <p class="text"><span class="tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+         <p class="text"><span class="bolder">Reserve</span> a table, ask for today's special or just send us a message:</p>
+         <form action="#!" class="form">
+            <p class="text">
+               <input type="text" class="form-input" required placeholder="Name">
+            </p>
+            <p class="text">
+               <input type="number" class="form-input" required placeholder="How many people">
+            </p>
+            <p class="text">
+               <input type="datetime-local" class="form-input" required placeholder="Date and Time" value="2023-01-29T03:40">
+            </p>
+            <p class="text">
+               <input type="text" class="form-input" required placeholder="Message \ Special requirements">
+            </p>
+            <p class="text">
+              <button class="btn p8-16">SEND MESSAGE</button>
+            </p>
+         </form>
+      </div>
+
+   </div>
+   <!-- Footer -->
+   <footer class="footer">
+      <p class="text coppyright">Powered by <a href="#!" class="coppyright-link">w3.css</a></p>
+      <p class="text coppyright">Cloned by <a href="#!" class="coppyright-link dainn">Dainn</a></p>
+   </footer>
+   
+   <script>
+      // const $ = document.querySelector.bind(document)
+      // const $$ = document.querySelectorAll.bind(document)
+      // const menuItems = $$(".menu-item")
+      
+      // menuItems.forEach((item) => {
+      //    item.onclick = function() {
+      //       if (!($(".menu-item.menu-active") === item)) {
+      //          $(".menu-item.menu-active").classList.remove("menu-active")
+      //          item.classList.add("menu-active")
+      //       }
+      //    }
+      // })
+
+      // Open Menu
+      function myFunc(evt ,item) {
+         const foodList = document.getElementsByClassName('food-list')
+         const menuItems = document.getElementsByClassName('menu-item')
+         for (const item of foodList) {
+            item.style.display = 'none'
+         }
+         for (const item of menuItems) {
+            item.className = item.className.replace(' menu-active', '')
+         }
+         document.getElementById(item).style.display = 'block'
+         evt.target.className += ' menu-active'
+      }
+      document.getElementById('myLink').click()
+   </script>
+</body>
+</html>
